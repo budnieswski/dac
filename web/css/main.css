@@ -1,0 +1,510 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Hammersmith+One);
+
+html,
+body {
+   font-family: 'Droid Sans';
+   font-size: 14px;
+   color: #322f31;
+   background-color: #e5e6e7;
+}
+ul,
+li {
+   margin: 0;
+   padding: 0;
+}
+a {
+   outline: none;
+   color: inherit;
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: underline;
+}
+.alignleft {
+   float: left !important;
+}
+.alignright {
+   float: right !important;
+}
+.aligncenter {
+   margin: 0 auto !important;
+   display: block;
+}
+input.error, textarea.error, select.error {
+  box-shadow: 0 0 5px rgba(210, 27, 26, 1);
+  border: 1px solid rgba(210, 27, 26, 1);
+}
+input.valid, textarea.valid, select.valid{
+  box-shadow: 0 0 5px rgba(11, 200, 93, 1);
+  border: 1px solid rgba(11, 200, 93, 1);
+}
+input.warning, textarea.warning{
+  box-shadow: 0 0 5px rgba(227, 225, 35, 1);
+  border: 1px solid rgba(227, 225, 35, 1);
+}
+
+
+/* ==========================================================================
+   Default
+   ========================================================================== */
+
+.slowhidden {
+   display: none;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 960px;
+	height: auto;
+}
+
+#breadcrumbs {
+   float: left;
+   width: 450px;
+}
+#breadcrumbs .breadcrumb_last {
+   text-decoration: underline;
+}
+h1,h2,h3 {
+   font-family: 'Hammersmith One', sans-serif;
+   color: #008690;
+   font-weight: normal;
+}
+h1 {font-size: 20px}
+h2 {font-size: 18px}
+h3 {font-size: 15px}
+
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+#header {
+   width: 100%;
+   height: 200px;
+   background: url('../img/bg/header.jpg') repeat-x bottom;
+}
+#header a.login {
+   display: block;
+   float: right;
+   width: 150px;
+   height: 30px;
+   margin: 10px 0;
+   text-indent: -999em;
+   background: url('../img/bg/login.png') no-repeat;
+}
+#header .logo {
+   float: left;
+   width: 200px;
+   height: 147px;
+   margin-top: 5px;
+   background: url('../img/logo.png') no-repeat;
+}
+#header .logo a {
+   display: block;
+   width: 100%;
+   height: 100%;
+   text-indent: -999em;
+}
+.menu-header {
+   font-family: 'Hammersmith One', sans-serif;
+   font-size: 18px;
+   position: relative;
+   margin-top: 16px;
+   list-style-type: none;
+   text-align: center;
+}
+.menu-header li {
+   position:relative;
+   display: inline-block;
+   margin: 0 38px;
+   text-transform: uppercase;
+}
+.menu-header a,
+.menu-header a:link, 
+.menu-header a:visited {
+   display: block;
+   color: #008690;
+   text-decoration: none;
+}
+.menu-header a:hover, 
+.menu-header li.ativo a { text-decoration: underline; }
+
+/*
+* Carrinho (header)
+************************************
+*/
+#header .carrinho {
+   position: relative;
+   float: right;
+   width: 150px;
+   height: 35px;
+   margin-top: 110px;
+   background: url('../img/bg/header-carrinho.png') no-repeat;
+}
+#header .carrinho div.total {
+   position: absolute;
+   z-index: 1;
+   width: 24px;
+   height: 19px;
+   top: 13px;
+   left: 11px;
+   text-align: center;
+   color: #fff
+}
+#header .carrinho a {
+   position: relative;
+   z-index: 9999;
+   display: block;
+   width: 100%;
+   height: 100%;
+   text-indent: -999em;
+}
+
+
+
+/* ==========================================================================
+   Banner
+   ========================================================================== */
+#banner {
+   width: 960px;
+   height: 259px;
+   padding-top: 27px;
+   padding-left: 11px;
+   background: url('../img/bg/banner.png') no-repeat bottom;
+   background-position: 0 18px;
+}
+#banner .wrap {
+   margin: 0;
+   padding: 0;
+   width: 930px;
+   position: relative;
+   overflow: hidden;
+}
+
+#banner .wrap li { list-style: none; }
+#banner .wrap ul li { float: left; }
+
+#banner .dots { position: absolute; z-index: 500; bottom: 0; right: 0; }
+#banner .dots>li { display: inline-block;  }
+#banner .dots {
+   padding: 0 12px;
+   margin: 0;
+   margin-bottom: 5px;
+   text-align: center;
+   background: transparent;
+}
+#banner .dots>li {
+   width: 15px;
+   height: 15px;
+   margin: 0 7px;
+   color: #fff;
+   text-indent: -999em;
+   cursor: pointer;
+   background: #008690;
+
+   -webkit-border-radius: 50px;
+   -moz-border-radius: 50px;
+   border-radius: 50px;
+}
+#banner .dots .active {background-color: #e1e2e3; border: 1px solid #008690;}
+
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+#content {
+   width: 100%;
+   min-height: 600px;
+   padding-bottom: 20px;
+   background: url('../img/bg/body.jpg');
+}
+.institucional .extra {
+   float: right;
+   padding-top: 35px;
+   width: 400px;
+}
+.institucional .extra .sprite {
+   padding-left: 50px;
+   margin-bottom: 25px;
+   background: url('../img/bg/contato-sprite.png') no-repeat 0 0;
+}
+.institucional .extra .sprite.endereco {
+   /*width: 21px;*/
+   height: 28px;
+}
+.institucional .extra .sprite.telefone {
+   /*width: 30px;*/
+   height: 30px;
+   background-position: 0 -30px;
+}
+.institucional .extra .sprite.email {
+   /*width: 32px;*/
+   height: 20px;
+   background-position: 0 -62px;
+}
+
+/*
+* Home
+************************************
+*/
+.box-home {
+   margin: 50px 0;
+   list-style: none;
+}
+.box-home > li {
+   float: left;
+   margin: 0 45px;
+   width: 230px;
+   padding-bottom: 40px;
+   background: url('../img/bg/box-home-bottom.png') no-repeat bottom;
+}
+.box-home > li > .title {
+   font-family: 'Hammersmith One', sans-serif;
+   font-size: 20px;
+   height: 30px;
+   padding-bottom: 15px;
+   margin-bottom: 10px;
+   color: #008690;
+   text-align: center;
+   background: url('../img/bg/box-home-top.png') no-repeat bottom;
+}
+.box-home > li > .description {
+   text-align: center;
+}
+
+/*
+* Localizacao
+************************************
+*/
+#localizacao .mapa {
+   float: left;
+   width: 450px;
+}
+
+/*
+* Cadastro
+************************************
+*/
+#cadastro .formulario {
+   float: left;
+   width: 450px;
+}
+#cadastro input.small {width: 60px; margin-left: 10px;}
+#cadastro input.medium {width: 227px;}
+
+/*
+* Formulario
+************************************
+*/
+.formulario p {
+   position: relative;
+   clear: both;
+   padding-bottom: 25px;
+}
+.formulario label {
+   float: left;
+   padding-top: 6px;
+}
+.formulario input,
+.formulario select,
+.formulario textarea {
+   float: right;
+   
+   width: 300px;
+   height: 22px;
+   text-indent: 5px;
+   border: 1px solid #d2d3d4;
+
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+
+}
+.formulario textarea {
+   width: 295px;
+   height: auto;
+   resize: none;
+   margin-bottom: 15px;
+}
+.formulario .botao {
+   border: 0;
+   float: left;
+   margin-left: 150px;
+   width: 96px !important;
+   height: 28px !important;
+   text-indent: -999em;
+   background: url('../img/bg/btn-enviar-black.png') no-repeat;
+}
+
+/*
+* Produtos
+************************************
+*/
+#produtos {}
+#produtos .box-home {float: left; width: 230px; margin: 20px 0;}
+#produtos .box-home li {margin: 0}
+#produtos .menu-produtos {
+   list-style: none;
+}
+#produtos .menu-produtos li {
+   margin: 15px 0 15px 10px;
+   text-align: left;
+}
+#produtos .posts {
+   float: right;
+   width: 700px;
+}
+#produtos .posts ul.list {
+   list-style: none;
+}
+#produtos .posts ul.list li {
+   float: left;
+   margin: 15px 34px;
+   width: 165px;
+   height: 180px;
+}
+#produtos .posts ul.list li .preco,
+#produtos .posts ul.list li .quantidade {
+   float: left;
+   width: 100%;
+}
+#produtos .posts ul.list li .adicionar  {
+   float: right;
+   font-size: 20px;
+   line-height: 20px;
+   color: #008690;
+   font-weight: bold;
+}
+
+#produtos .posts ul.list li .titulo {
+   padding-top: 10px;
+   text-align: center;
+}
+#produtos .posts ul.list li figure {
+   width: 165px;
+   height: 160px;
+   overflow: hidden;
+   border: 1px solid #008690;
+}
+
+/*
+* The post
+************************************
+*/
+#produtos .the_post {}
+#produtos .the_post .thumb {
+   float: left;
+   width: 250px;
+   height: 245px;
+}
+#produtos .the_post .thumb img {border: 1px solid #008690}
+
+#produtos .the_post .adicionar-carrinho {
+   float: right;
+   margin-top: 20px;
+   width: 203px;
+   height: 34px;
+   background: url('../img/bg/adicionar-carrinho.png') no-repeat;
+}
+#produtos .the_post .thumb .adicionar-carrinho a {
+   display: block;
+   width: 100%;
+   height: 100%;
+   text-indent: -999em;
+}
+#produtos .the_post .the_content {
+   float: right;
+   width: 420px;
+}
+
+#links {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+   bottom: 18px;
+   left: 0;
+   width: 400px;
+    list-style: none;
+    padding-left: 15px;
+    /*text-align: center;*/
+    z-index: 99999;
+}
+
+/*
+* Carrinho (page)
+************************************
+*/
+#carrinho {}
+#carrinho .area-compra h1 { float: left; }
+#carrinho .area-compra a.esvaziar-carrinho {
+   display: block;
+   float: right;
+   width: 165px;
+   height: 28px;
+   text-indent: -999em;
+   background: url('../img/bg/esvaziar-carrinho.png') no-repeat;
+}
+#carrinho .area-compra table {
+   margin: 20px auto;
+}
+#carrinho .area-compra table tr {
+   border-bottom: 1px solid #008690;
+}
+#carrinho .area-compra table td {
+   width: 18%;
+   border-right: 1px solid #008690;
+}
+#carrinho .area-compra table figure {}
+#carrinho .area-compra a.table-remover {
+   display: block;
+   width: 30px;
+   height: 30px;
+   margin-top: 20px;
+   margin-left: 30px;
+   text-indent: -999em;
+   background: url('../img/bg/sprite.png') no-repeat;
+   background-position: -1px -63px;
+}
+#carrinho .area-compra .valor-total-compra {
+   width: 100%;
+   float: left;
+   text-align: right;
+   font-size: 15px;
+}
+#carrinho .area-compra .finalizar {
+   display: block;
+   float: right;
+   width: 150px;
+   height: 30px;
+   margin: 10px 0;
+   text-indent: -999em;
+   background: url('../img/bg/encomendar.png') no-repeat;
+}
+
+#carrinho .carrinho-vazio {
+   display: none;
+   text-align: center;
+}
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+#footer {
+   width: 100%;
+   height: 40px;
+   background: url('../img/bg/header.jpg') repeat-x bottom;
+}
+#footer .wrap {
+   position: relative;
+   padding-top: 10px;
+   text-align: center;
+}
+#footer .icon-facebook {
+   position: absolute;
+   right: 0;
+   top: 5px;
+}

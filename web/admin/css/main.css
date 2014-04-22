@@ -1,0 +1,297 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Hammersmith+One);
+
+html,
+body {
+   font-family: 'Droid Sans';
+   font-size: 14px;
+   color: #322f31;
+   background-color: #e5e6e7;
+}
+ul,
+li {
+   margin: 0;
+   padding: 0;
+}
+a {
+   outline: none;
+   color: inherit;
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: underline;
+}
+.alignleft {
+   float: left !important;
+}
+.alignright {
+   float: right !important;
+}
+.aligncenter {
+   margin: 0 auto !important;
+   display: block;
+}
+input.error, textarea.error, select.error {
+  box-shadow: 0 0 5px rgba(210, 27, 26, 1);
+  border: 1px solid rgba(210, 27, 26, 1);
+}
+input.valid, textarea.valid, select.valid{
+  box-shadow: 0 0 5px rgba(11, 200, 93, 1);
+  border: 1px solid rgba(11, 200, 93, 1);
+}
+input.warning, textarea.warning{
+  box-shadow: 0 0 5px rgba(227, 225, 35, 1);
+  border: 1px solid rgba(227, 225, 35, 1);
+}
+
+
+/* ==========================================================================
+   Default
+   ========================================================================== */
+.wrap {
+	margin: 0 auto;
+	width: 960px;
+	height: auto;
+}
+
+#breadcrumbs {
+   float: left;
+   width: 450px;
+}
+#breadcrumbs .breadcrumb_last {
+   text-decoration: underline;
+}
+h1,h2,h3 {
+   font-family: 'Hammersmith One', sans-serif;
+   color: #008690;
+   font-weight: normal;
+}
+h1 {font-size: 20px}
+h2 {font-size: 18px}
+h3 {font-size: 15px}
+
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+#header {
+   width: 100%;
+   height: 40px;
+   background: url('../img/bg/header.png') repeat-x bottom;
+}
+.menu-header {
+   font-family: 'Hammersmith One', sans-serif;
+   padding-top: 7px;
+   font-size: 18px;
+   position: relative;
+   list-style-type: none;
+   text-align: center;
+}
+.menu-header li {
+   position:relative;
+   display: inline-block;
+   margin: 0 38px;
+   text-transform: uppercase;
+   z-index: 597;
+}
+.menu-header a,
+.menu-header a:link, 
+.menu-header a:visited {
+   display: block;
+   color: #008690;
+   text-decoration: none;
+}
+.menu-header a:hover, 
+.menu-header li.ativo a { text-decoration: underline; }
+ul.dropdown ul {
+   position: absolute;
+
+   list-style: none;
+   visibility: hidden;
+   top: 100%;
+   left: 0;
+   z-index: 598;
+   text-align: left;
+
+   margin: 0;
+   padding: 0;
+   border:0;
+   height: auto;
+   width: 180px;
+   
+   background-color: #e6e6e8;
+   border: 1px solid #c9c9cb;
+}
+ul.dropdown ul li { float: none;  }
+ul.dropdown ul ul {
+ top: 1px;
+ left: 99%;
+}
+ul.dropdown li:hover > ul {visibility: visible; }
+ul.dropdown a { padding-bottom: 7px; }
+
+
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+#content {
+   width: 100%;
+   min-height: 600px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   background: url('../img/bg/body.jpg');
+}
+.extra {
+   float: right;
+padding-top: 35px;
+width: 400px;
+}
+
+
+/*
+* Home
+************************************
+*/
+.box-home {
+   padding: 50px 0;
+   list-style: none;
+}
+.box-home > li {
+   float: left;
+   margin: 0 45px;
+   width: 230px;
+   padding-bottom: 40px;
+   background: url('../img/bg/box-home-bottom.png') no-repeat bottom;
+}
+.box-home > li > .title {
+   font-family: 'Hammersmith One', sans-serif;
+   font-size: 20px;
+   height: 30px;
+   padding-bottom: 15px;
+   margin-bottom: 10px;
+   color: #008690;
+   text-align: center;
+   background: url('../img/bg/box-home-top.png') no-repeat bottom;
+}
+.box-home > li > .description {
+   text-align: center;
+}
+
+
+
+/*
+* Formulario
+************************************
+*/
+.formulario {
+   float: left;
+   width: 450px;
+}
+.formulario input.small {width: 60px; margin-left: 10px;}
+.formulario input.medium {width: 227px;}
+
+.formulario p {
+   position: relative;
+   clear: both;
+   padding-bottom: 25px;
+}
+.formulario label {
+   float: left;
+   padding-top: 6px;
+}
+.formulario input,
+.formulario select,
+.formulario textarea {
+   float: right;
+   
+   width: 300px;
+   height: 22px;
+   text-indent: 5px;
+   border: 1px solid #d2d3d4;
+
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+
+}
+.formulario textarea {
+   width: 295px;
+   height: auto;
+   resize: none;
+   margin-bottom: 15px;
+}
+.formulario .botao {
+   border: 0;
+   float: right;
+   /*margin-left: 150px;*/
+   width: 96px !important;
+   height: 28px !important;
+   text-indent: -999em;
+   background: url('../img/bg/btn-enviar-black.png') no-repeat;
+}
+.formulario .botao:hover {background: url('../img/bg/btn-enviar-blue.png') no-repeat}
+.formulario .buscar {background: url('../img/bg/btn-buscar-black.png') no-repeat}
+.formulario .buscar:hover {background: url('../img/bg/btn-buscar-blue.png') no-repeat}
+.formulario .gravar {background: url('../img/bg/btn-gravar-black.png') no-repeat}
+.formulario .gravar:hover {background: url('../img/bg/btn-gravar-blue.png') no-repeat}
+.formulario .exibir {background: url('../img/bg/btn-exibir-black.png') no-repeat}
+.formulario .exibir:hover {background: url('../img/bg/btn-exibir-blue.png') no-repeat}
+.formulario .editar {background: url('../img/bg/btn-editar-black.png') no-repeat}
+.formulario .editar:hover {background: url('../img/bg/btn-editar-blue.png') no-repeat}
+.formulario .deletar {background: url('../img/bg/btn-deletar-black.png') no-repeat}
+.formulario .deletar:hover {background: url('../img/bg/btn-deletar-blue.png') no-repeat}
+
+
+table {
+   margin: 0px auto;
+}
+table tr {
+   border-bottom: 1px solid #008690;
+}
+table td {
+   width: 18%;
+   border-right: 1px solid #008690;
+}
+table figure {}
+table a.table-remover {
+   display: block;
+   width: 30px;
+   height: 30px;
+   margin: 15px 10px 0 10px;
+   text-indent: -999em;
+   background: url('../img/bg/sprite.png') no-repeat;
+   background-position: -1px -63px;
+}
+table a.table-editar {
+   display: block;
+   width: 30px;
+   height: 30px;
+   margin: 0 10px 0 10px;
+   text-indent: -999em;
+   background: url('../img/bg/sprite.png') no-repeat;
+   background-position: -1px -128px;
+}
+.table-small { width: 500px;text-align: center;  }
+.table-small a,
+.table-link-inline a { float: left;  margin-top: 0 !important; margin-left: 30px !important;  }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+#footer {
+   width: 100%;
+   height: 40px;
+   background: url('../img/bg/header.png') repeat-x bottom;
+}
+#footer .wrap {
+   position: relative;
+   padding-top: 10px;
+   text-align: center;
+}
+#footer .icon-facebook {
+   position: absolute;
+   right: 0;
+   top: 5px;
+}
