@@ -32,7 +32,7 @@
       <td>Nome</td>
       <!-- <td>Categoria</td> -->
       <td>Quantidade</td>
-      <td>Pre√ßo</td>
+      <td>PreÁo</td>
       <td>Tempo Preparo</td>
       <td></td>
     </tr>
@@ -40,7 +40,7 @@
   <tbody>
     <tr data-id="1">
       <td><figure><img src="./img/produtos/bolo-maracuja.jpg" alt=""/></figure></td>
-      <td>Bolo de Maracuj√°</td>
+      <td>Bolo de Maracuj·</td>
       <!-- <td>Bolo</td> -->
       <td>7</td>
       <td data-valor-unidade="1">R$ 1,00</td>
@@ -53,7 +53,7 @@
 
     <tr data-id="2">
       <td><figure><img src="./img/produtos/bolo-maracuja.jpg" alt=""/></figure></td>
-      <td>Bolo de Maracuj√°</td>
+      <td>Bolo de Maracuj·</td>
       <!-- <td>Bolo</td> -->
       <td>7</td>
       <td data-valor-unidade="1">R$ 1,00</td>

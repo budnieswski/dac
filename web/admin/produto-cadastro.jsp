@@ -28,7 +28,7 @@
       
       <p> <label for="quantidade">Quantidade</label> <input type="text" name="quantidade" /> </p>
 
-      <p> <label for="preco">PreÃ§o</label> <input type="text" name="preco" /> </p>
+      <p> <label for="preco">Preço</label> <input type="text" name="preco" /> </p>
 
       <p><input type="submit" class="botao" name="" id=""></p>
 

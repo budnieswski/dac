@@ -16,7 +16,7 @@
       <td>Nome</td>
       <td>E-mail</td>
       <td>Telefone</td>
-      <td>Endere√ßo</td>
+      <td>EndereÁo</td>
       <td></td>
     </tr>
   </thead>
@@ -44,7 +44,7 @@
     </tr>
 
     <tr data-id="1">
-      <td>Jo√£o</td>
+      <td>Jo„o</td>
       <td>joao.joao.maria@gmail.com</td>
       <td>(41) 1234-5678</td>
       <td>Rua do infinito, 123</td>

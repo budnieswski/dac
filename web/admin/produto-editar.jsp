@@ -21,7 +21,7 @@
 
   <div class="extra">
     <div class="formulario">
-      <h1>Produto: Bolo de Maracuj√°</h1>
+      <h1>Produto: Bolo de Maracuj·</h1>
       <form action="#" id="form-cadastro">
         
         <p> <label for="nome">Nome</label> <input type="text" name="nome" value="Bolo Maracuja" /> </p>
@@ -41,7 +41,7 @@
         
         <p> <label for="quantidade">Quantidade</label> <input type="text" name="quantidade" value="1" /> </p>
     
-        <p> <label for="preco">Pre√ßo</label> <input type="text" name="preco" value="40" /> </p>
+        <p> <label for="preco">PreÁo</label> <input type="text" name="preco" value="40" /> </p>
     
         <p><input type="submit" class="botao gravar" name="" id=""></p>
     

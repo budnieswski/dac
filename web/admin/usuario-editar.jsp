@@ -21,7 +21,7 @@
 
   <div class="extra">
     <div class="formulario">
-      <h1>Usuario: Jo√£o</h1>
+      <h1>Usuario: Jo„o</h1>
       <form action="#" id="form-cadastro">
       
       <p> <label for="nome">Nome</label> <input type="text" name="nome" /> </p>
