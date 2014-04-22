@@ -4,7 +4,7 @@
   
 <div id="footer">
   <div class="wrap">
-    Rua Abcd, 123 - Curitiba / Paran√°
+    Rua Abcd, 123 - Curitiba / Paran·
   </div>
 </div> <!-- e#footer -->
 

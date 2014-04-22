@@ -1,3 +1,5 @@
+<%@taglib prefix="c"uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!doctype html>
 <!--[if lt IE 7]>       <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>          <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -9,7 +11,6 @@
   <meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/vnd.microsoft.icon" href="./favicon.ico"/>
   <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./favicon.ico"/>
-  <meta name="author" content="Guilherme Budnieswski"/>
 
   <title>Vanilla</title>
 
